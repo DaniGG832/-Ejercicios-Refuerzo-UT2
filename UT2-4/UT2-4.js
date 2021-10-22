@@ -1,6 +1,5 @@
 'use strict'
 
-alert("hola");
 
 let i = 1;
 
