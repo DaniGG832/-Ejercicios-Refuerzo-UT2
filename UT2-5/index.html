@@ -11,9 +11,7 @@
 
     let numero = prompt("Introduce un numero de 0 a 1000");
     
-    if (!isNaN(numero)) {
-      
-        if(numero <=1000 && numero>=0){
+    if (!isNaN(numero)&&(numero <=1000 && numero>=0)) {
           
           for (let i = 0; i < numero.length; i++) {
             document.write(numero.charAt(i));
@@ -34,11 +32,11 @@
             document.write("<br>");
           }
 
-        }    
-
-
+    } 
+    else{
+      alert("el dato introducido no es correcto");
     }
-      
+
     
     </script>
 </body>
