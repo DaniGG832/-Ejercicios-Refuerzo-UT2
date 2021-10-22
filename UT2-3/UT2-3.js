@@ -6,6 +6,7 @@ document.getElementById("boton").onclick = comprobar;
 let asesino =document.getElementById("asesino");
 let sala =document.getElementById("sala");
 let arma =document.getElementById("arma");
+let articulo = document.getElementById("articulo");
 let resuelto =document.getElementById("resuelto");
 
 
@@ -33,9 +34,11 @@ function comprobar() {
             arma.innerHTML = "veneno";
             break;
           case "Galería":
+            articulo.innerHTML = " la ";
             arma.innerHTML = "trofeo";
             break;
           case "Sala de billar":
+            articulo.innerHTML = " la ";
             arma.innerHTML = "palo de billar";
             break;
           case "Comedor":
@@ -55,14 +58,13 @@ function comprobar() {
       asesino.innerHTML = "_________"; 
       sala.innerHTML = "_________"; 
       arma.innerHTML = "_________";
+      articulo.innerHTML = " el "
       resuelto.innerHTML="";
 
       // se muestra en consola si no coinciden valorSala con cospechoso
       console.log("el valor no coincide");
 
     }
-
-    
 
 
 }
