@@ -5,28 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UT2-3</title>
-    <script defer src="UT2-3.js"></script>
+    <script defer  src="UT2-3.js"></script>
 </head>
 <body>
     <h1>Seseccione la sala donde se produjo el asesinato y adivine al asesino </h1>
 <form action="">
     <label form="sala">seleccione la sala:</label>
     <select name="salas" id="valorSala">
-        <option value="0" selected></option>
-        <option value="1">salón de baile</option>
-        <option value="2">Galería</option>
-        <option value="3">Sala de billar</option>
-        <option value="4">Comedor</option>
+        <option value="" ></option>
+        <option value="salón de baile">salón de baile</option>
+        <option value="Galería">Galería</option>
+        <option value="Sala de billar">Sala de billar</option>
+        <option value="Comedor">Comedor</option>
         
     </select> 
 
     <label form="sospechoso">Seleccione el sospechoso:</label>
-    <select name="sospechosos" id="valorSospechoso">
-        <option value="0" selected></option>
-        <option value="4">Sr. Parkes</option>
-        <option value="2">Sra. Van Cleve</option>
-        <option value="3">Sra. Sparr</option>
-        <option value="1">Sr. Kalehoff</option>
+    <select name="sospechosos" id="valorSospechoso" >
+        <option value="" ></option>
+        <option value="Sr. Parkes" >Sr. Parkes</option>
+        <option value="Sra. Van Cleve">Sra. Van Cleve</option>
+        <option value="Sra. Sparr">Sra. Sparr</option>
+        <option value="Sr. Kalehoff">Sr. Kalehoff</option>
         
     </select> 
 
@@ -34,11 +34,12 @@
 </form>
 
 <h2 id="incorrecto">
-    <span id="asesino">_______</span> lo hizo en 
-    <span id="sospechoso">_______</span> con el 
-    <span id="arma">________</span>!
+    <span id="asesino">_________</span> lo hizo en el
+    <span id="sala">_________</span> con el 
+    <span id="arma">_________</span>!
 
 </h2>
-    
+<br>
+<span id="resuelto" style="color: red; font-size: xx-large;"></span>  
 </body>
 </html>
