@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UT2-3</title>
+    <script defer src="UT2-3.js"></script>
+</head>
+<body>
+    <h1>Seseccione la sala donde se produjo el asesinato y adivine al asesino </h1>
+<form action="">
+    <label form="sala">seleccione la sala:</label>
+    <select name="salas" id="valorSala">
+        <option value="0" selected></option>
+        <option value="1">salón de baile</option>
+        <option value="2">Galería</option>
+        <option value="3">Sala de billar</option>
+        <option value="4">Comedor</option>
+        
+    </select> 
+
+    <label form="sospechoso">Seleccione el sospechoso:</label>
+    <select name="sospechosos" id="valorSospechoso">
+        <option value="0" selected></option>
+        <option value="4">Sr. Parkes</option>
+        <option value="2">Sra. Van Cleve</option>
+        <option value="3">Sra. Sparr</option>
+        <option value="1">Sr. Kalehoff</option>
+        
+    </select> 
+
+    <button type="button" id="boton">Comprobar</button>
+</form>
+
+<h2 id="incorrecto">
+    <span id="asesino">_______</span> lo hizo en 
+    <span id="sospechoso">_______</span> con el 
+    <span id="arma">________</span>!
+
+</h2>
+    
+</body>
+</html>
